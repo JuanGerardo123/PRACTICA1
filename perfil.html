@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Gerardo Meléndez Román</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        /* Estilos Globales y de Contenedor */
+        body {
+            background-color: #f8f9fa; 
+            font-family: 'Roboto', sans-serif;
+            text-align: center; /* Ayuda a centrar contenido de fallback */
+        }
+
+        .perfil-container {
+            width: 900px;
+            margin: 40px auto; /* Centrado correcto */
+            background-color: #ffffff; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+            border-radius: 12px;
+            overflow: hidden; 
+            text-align: left; /* Restablecer la alineación de texto dentro del contenedor */
+        }
+
+        h1 {
+            text-align: center;
+            color: #343a40; 
+            padding: 20px 0;
+            margin-top: 0;
+            background-color: #e9ecef; 
+        }
+
+        /* Estilos de la Imagen */
+        .perfil-img {
+            display: block;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 8px solid #007bff; 
+            object-fit: cover;
+            margin: 20px auto; 
+        }
+
+        /* Estilos de las Tablas Principales */
+        .main-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        /* Contenedor de las tablas de datos (para padding y margen) */
+        .data-sections-wrapper {
+            padding: 0 20px 20px 20px;
+        }
+
+        /* Estilos de las Tablas de Datos (BÁSICA y EMPLEO) */
+        .data-table {
+            background-color: #ffffff; 
+            width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid #dee2e6;
+            border-collapse: separate; /* Necesario para que el border-radius en el pie se vea bien */
+            border-spacing: 0;
+            border-radius: 4px; /* Borde más sutil */
+        }
+
+        /* Fila de encabezado de sección */
+        .header-row td {
+            background-color: #007bff; 
+            color: white !important;
+            font-weight: 700;
+            font-size: 1.1em;
+            padding: 10px 12px;
+            border-bottom: none;
+        }
+        
+        .header-row i {
+            color: #ffffff !important; 
+            margin-right: 8px;
+        }
+        
+        /* Filas de datos (corregidas para ser una por etiqueta/valor) */
+        .data-table tr:not(.header-row) td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #e9ecef; /* Separador de fila más sutil */
+        }
+        
+        .data-table tr:last-of-type td {
+             border-bottom: none; /* Eliminar el borde de la última fila de datos */
+        }
+
+        /* Estilos para el texto de datos */
+        .label {
+            color: #6c757d; 
+            font-weight: 400;
+        }
+
+        .value {
+            color: #343a40; 
+            font-weight: 700;
+        }
+        
+        /* Información de Contacto al lado de la imagen */
+        .contact-info {
+            padding-left: 20px;
+        }
+        .contact-info p {
+            padding: 5px 0;
+            margin: 0;
+            color: #343a40;
+            font-size: 1em;
+        }
+
+        /* Pie de página (footer-cell) */
+        .footer-cell {
+            background-color: #343a40 !important; 
+            color: white !important;
+            text-align: center !important;
+            font-size: 1.2em;
+            padding: 15px;
+            font-weight: bold;
+            /* Aplicar el borde redondeado inferior al contenedor */
+        }
+    </style>
+
+    <div class="perfil-container">
+        <h1>Los de 5A</h1>
+        <table class="main-table">
+            <tr>
+                <td style="width: 30%; text-align: center; padding: 20px;">
+                    <img src="rui.jpg" alt="Gambit" class="perfil-img">
+                </td>
+                <td style="width: 70%; padding: 20px;">
+                    <div class="contact-info">
+                        <p>Genero: <b>Masculino</b></p>
+                        <p>Nacimiento: <b>Julio 2008</b></p>
+                        <p>Calle:<b>Flor de Cerezo</b></p>
+                        <p>Ciudad:<b>Reynosa</b></p>
+                        <p>Telefono: 555-3333</p>
+                        <p>Celular:<b>8991336539</b></p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="data-sections-wrapper">
+                    
+                    <table class="data-table">
+                        <tr class="header-row">
+                            <td colspan="2">
+                                <i class="fa fa-user" aria-hidden="true"></i> INFORMACIÓN BÁSICA
+                                <i class="fa fa-question-circle pull-right" aria-hidden="true"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 30%;" class="label">E-Mail</td>
+                            <td class="value">melendezromanjuangerardo1i@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Apellido Materno</td>
+                            <td class="value">Melendez Roman</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Altura</td>
+                            <td class="value">1.85 mts</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Peso</td>
+                            <td class="value">82 kg</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Color de Pelo</td>
+                            <td class="value">Cafe</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Tipo de Sangre</td>
+                            <td class="value">B+</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Signo Zodiacal</td>
+                            <td class="value">Cancer</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Estado Civil</td>
+                            <td class="value">Soltero</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Educación</td>
+                            <td class="value">High-School</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Historia de Enfermedades</td>
+                            <td class="value">Ninguna</td>
+                        </tr>
+                    </table>
+
+                    <table class="data-table">
+                        <tr class="header-row">
+                            <td colspan="2">
+                                <i class="fa fa-check-square" aria-hidden="true"></i> INFORMACIÓN DE EMPLEO
+                                <i class="fa fa-question-circle pull-right" aria-hidden="true"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 30%;" class="label">Estado del Empleo</td>
+                            <td class="value">Tiempo Completo</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Salario Mensual</td>
+                            <td class="value">$50,000</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Ocupación</td>
+                            <td class="value">Superheroe</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Nombre de la Empresa</td>
+                            <td class="value">Vengadores</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Tamaño de la Empresa</td>
+                            <td class="value">Marvel</td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="footer-cell">
+                    Gambit de Los X-Men
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
