@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juan Gerardo Meléndez Román</title>
+
+    <!-- Bootstrap 3 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+      :root {
+        --salmon: #ff0000;
+        --ghost-white: #f6f6fd;
+        --tiffany-blue: #750101;
+        --yinmn-blue: #324d71;
+      }
+
+      body {
+        background-color: var(--ghost-white);
+        background-image: url("arthur.webp");
+        background-size: cover;
+        background-attachment: fixed;
+        color: #000;
+      }
+
+      .jumbotron {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 2em;
+      }
+
+      .dropdown-menu > li > a {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Logo y botón para móviles -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Inicio</a>
+        </div>
+    
+        <!-- Menú principal -->
+        <ul class="nav navbar-nav">
+          <!-- Unidad 1 con dropdown -->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Unidad 1 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="ciberseguridad.html">Conceptos</a></li>
+              <li><a href="tabla.html">Ataques</a></li>
+              <li><a href="#">Protección</a></li> <!-- Puedes cambiar el href luego -->
+            </ul>
+          </li>
+    
+          <!-- Botones de Unidad 2 y Unidad 3 (sin menú por ahora) -->
+          <li><a href="#">Unidad 2</a></li>
+          <ul class="dropdown-menu">
+            <li><a href="ciberseguridad.html">Conceptos</a></li>
+            <li><a href="tabla.html">Ataques</a></li>
+            <li><a href="#">Protección</a></li> <!-- Puedes cambiar el href luego -->
+          </ul>
+          <li><a href="#">Unidad 3</a></li>
+          <li><a href="juan04.html">Calculadora</a></li>
+        </ul>
+
+      
+      </div>
+    </nav>
+
+    <!-- Página principal -->
+    <div class="jumbotron">
+      <h1>Mi Página Web Personal</h1>
+      <h2>Juan Gerardo</h2>
+      <h3>Programación 5to A</h3>
+      <p>Explorando el mundo de la ciberseguridad</p>
+    </div>
+  </body>
+</html>
