@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juan Gerardo Meléndez Román</title>
 
-    <!-- Bootstrap 3 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css" />
+    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
+    
     <style>
       :root {
         --salmon: #ff0000;
@@ -21,7 +22,7 @@
 
       body {
         background-color: var(--ghost-white);
-        background-image: url("arthur.webp");
+        background-image: url("arthur.webp"); /* Asegúrate de que 'arthur.webp' exista */
         background-size: cover;
         background-attachment: fixed;
         color: #000;
@@ -41,45 +42,60 @@
   <body>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
-        <!-- Logo y botón para móviles -->
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">Inicio</a>
         </div>
     
-        <!-- Menú principal -->
         <ul class="nav navbar-nav">
-          <!-- Unidad 1 con dropdown -->
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Unidad 1 <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="ciberseguridad.html">Conceptos</a></li>
               <li><a href="tabla.html">Ataques</a></li>
-              <li><a href="#">Protección</a></li> <!-- Puedes cambiar el href luego -->
-            </ul>
+              <li><a href="#">Protección</a></li> </ul>
           </li>
     
-          <!-- Botones de Unidad 2 y Unidad 3 (sin menú por ahora) -->
           <li><a href="#">Unidad 2</a></li>
-          <ul class="dropdown-menu">
-            <li><a href="ciberseguridad.html">Conceptos</a></li>
-            <li><a href="tabla.html">Ataques</a></li>
-            <li><a href="#">Protección</a></li> <!-- Puedes cambiar el href luego -->
-          </ul>
           <li><a href="#">Unidad 3</a></li>
-            <li><a href="juan04.html">Calculadora</a></li>
-            <li><a href="perfil.html">Perfil</a></li>
-        </ul>
-
-      
+          <li><a href="juan04.html">Calculadora</a></li>
+          </ul>
       </div>
     </nav>
 
-    <!-- Página principal -->
     <div class="jumbotron">
       <h1>Mi Página Web Personal</h1>
       <h2>Juan Gerardo</h2>
       <h3>Programación 5to A</h3>
       <p>Explorando el mundo de la ciberseguridad</p>
+      
+      <button id="btnPerfil" class="btn btn-primary btn-lg" style="margin-top: 20px;">
+        Ver Perfil de Juan Gerardo
+      </button>
+      
     </div>
+    
+    <script>
+      // Función para abrir el perfil en una ventana flotante
+      function abrirPerfil() {
+        // Abre la ventana flotante
+        const ventana = window.open(
+          "perfil.html", // URL del archivo perfil.html
+          "PerfilGambit", // Nombre de la ventana
+          "width=900,height=700,resizable=yes,scrollbars=yes" // Características de la ventana
+        );
+        
+        // Espera a que cargue el contenido para ajustar el tamaño (opcional, pero útil)
+        ventana.onload = function() {
+          // Ajusta el tamaño del documento al tamaño de la ventana (para evitar barras de desplazamiento innecesarias)
+          ventana.document.body.style.width = "100%";
+          ventana.document.body.style.height = "100%";
+          ventana.document.body.style.margin = "0";
+          ventana.document.body.style.overflow = "auto";
+        };
+      }
+      
+      // Asigna la función abrirPerfil al evento click del botón
+      document.getElementById('btnPerfil').addEventListener('click', abrirPerfil);
+    </script>
   </body>
 </html>
