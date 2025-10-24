@@ -5,13 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS + jQuery -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-    <!-- Fuente adicional -->
     <link href="https://fonts.cdnfonts.com/css/schnoerkel-caps" rel="stylesheet"/>
 
     <title>Calculadora</title>
@@ -88,7 +86,7 @@
 </head>
 <body>
 
-    <!-- Navegación -->
+
     <nav class="navbar navbar-default" style="background-color: var(--salmon);">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -96,7 +94,7 @@
             </div>
 
             <ul class="nav navbar-nav">
-                <!-- Unidad 1 -->
+            
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Unidad 1 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -106,7 +104,6 @@
                     </ul>
                 </li>
 
-                <!-- Unidad 2 -->
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Unidad 2 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -116,7 +113,7 @@
                     </ul>
                 </li>
 
-                <!-- Unidad 3 -->
+           
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Unidad 3 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -129,14 +126,12 @@
         </div>
     </nav>
 
-    <!-- Encabezado -->
     <div class="jumbotron">
         <h1>Juan Gerardo Meléndez Román</h1>
         <h3>Programación 5A</h3>
         <p>Construye Páginas Web</p>
     </div>
 
-    <!-- Calculadora -->
     <div class="calc">
         <input type="text" id="ans" readonly>
 
@@ -168,7 +163,6 @@
         </div>
     </div>
 
-    <!-- JavaScript de la calculadora -->
     <script type="text/javascript">
         const Solve = (val) => {
             const v = document.getElementById('ans');

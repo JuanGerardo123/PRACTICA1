@@ -22,7 +22,7 @@
 
       body {
         background-color: var(--ghost-white);
-        background-image: url("arthur.webp"); /* Asegúrate de que 'arthur.webp' exista */
+        background-image: url("arthur.webp"); 
         background-size: cover;
         background-attachment: fixed;
         color: #000;
@@ -76,18 +76,18 @@
     </div>
     
     <script>
-      // Función para abrir el perfil en una ventana flotante
+   
       function abrirPerfil() {
-        // Abre la ventana flotante
+      
         const ventana = window.open(
-          "perfil.html", // URL del archivo perfil.html
-          "PerfilGambit", // Nombre de la ventana
-          "width=900,height=700,resizable=yes,scrollbars=yes" // Características de la ventana
+          "perfil.html", 
+          "PerfilGambit", 
+          "width=900,height=700,resizable=yes,scrollbars=yes" 
         );
         
-        // Espera a que cargue el contenido para ajustar el tamaño (opcional, pero útil)
+    
         ventana.onload = function() {
-          // Ajusta el tamaño del documento al tamaño de la ventana (para evitar barras de desplazamiento innecesarias)
+    
           ventana.document.body.style.width = "100%";
           ventana.document.body.style.height = "100%";
           ventana.document.body.style.margin = "0";
@@ -95,7 +95,6 @@
         };
       }
       
-      // Asigna la función abrirPerfil al evento click del botón
       document.getElementById('btnPerfil').addEventListener('click', abrirPerfil);
     </script>
   </body>
